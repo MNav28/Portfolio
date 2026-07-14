@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #1c1c1c 0% 45%, #08463b 70% 100%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 100px;
+
+    
+    border: 1px solid yellow;
+}
