@@ -45,6 +45,28 @@ header {
     font-family: 'Fira Code', monospace;
 }
 
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-direction: column;
+}
+
+.nav-item p {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    line-height: 8px;
+    transition: opacity 0.2s ease;
+    font-size: 32px;
+    color: #3dcfb6;
+}
+
+.nav-item a:hover + p {
+    opacity: 1;
+}
+
 .enabled {
     display: flex;
     justify-content: center;
