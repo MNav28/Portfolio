@@ -40,6 +40,32 @@ header {
     cursor: pointer;
 }
 
+.switch-language p {
+    font-size: 16px;
+    font-family: 'Fira Code', monospace;
+}
+
+.enabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    position: relative;
+    background-color: #3dcfb6;
+    width: 50%;
+    height: 100%;
+    border-radius: .8rem;
+}
+
+.disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    width: 50%;
+    height: 100%;
+}
+
 .header-left-container a {
     color: #ffffff;
     font-family: 'Fira Code', monospace;
