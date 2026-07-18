@@ -63,7 +63,7 @@ header {
     color: #3dcfb6;
 }
 
-.nav-item a:hover + p {
+.nav-item a:hover+p {
     opacity: 1;
 }
 
@@ -99,4 +99,81 @@ header {
     color: #ffffff;
     font-size: 32px;
     font-family: 'Fira Code', monospace;
+}
+
+.above-the-fold {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    height: calc(100vh - 100px);
+    width: 100%;
+    max-width: 1440px;
+    position: relative;
+}
+
+.hero-left {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+    padding-top: 416px;
+    padding-bottom: 16px;
+}
+
+.hero-stroke {
+    background-color: #3dcfb6;
+    border: none;
+    height: 100%;
+    width: 1px;
+}
+
+.hero-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    font-family: Karla, Arial, Helvetica, sans-serif;
+}
+
+.hero-middle h2 {
+    font-weight: 100;
+    font-size: 40px;
+    font-family: 'Fira Code', monospace;
+    color: #d9d9d9;
+}
+
+.hero-middle h1 {
+    font-size: 128px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    color: #d9d9d9;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: unset;
+    align-items: unset;
+    gap: 24px;
+    height: 48px;
+}
+
+.hero-buttons button {
+    cursor: pointer;
+    padding: 0 16px;
+    border: 1px solid white;
+    border-radius: 24px;
+    min-width: 150px;
+    background-color: transparent;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.hero-buttons:hover {
+    border-color: #3dcfb6;
+    color: transparent;
+    transition: border-color 1s ease-in-out;
 }
