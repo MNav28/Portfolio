@@ -177,3 +177,64 @@ header {
     color: transparent;
     transition: border-color 1s ease-in-out;
 }
+
+.hero-right {
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    padding: 224px 0px 16px;
+}
+
+.hero-right a:hover {
+    cursor: pointer;
+}
+
+/* .hero-right img {
+    object-fit: cover;
+} */
+
+.full-mail {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.full-mail:hover {
+    color: #3dcfb6;
+}
+
+.hero-right a {
+    width: 32px;
+    height: 32px;
+}
+
+.linkedin-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/icons/Linkedin_normal.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linkedin-icon:hover {
+    background-image: url("./assets/icons/Linkedin_hover.svg");
+}
+
+.github-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/icons/GitHub_normal.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.github-icon:hover {
+    background-image: url("./assets/icons/GitHub_hover.svg");
+}
