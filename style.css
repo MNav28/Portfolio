@@ -167,15 +167,42 @@ header {
     border: 1px solid white;
     border-radius: 24px;
     min-width: 150px;
+    /* height: 48px; */
     background-color: transparent;
-    color: #ffffff;
+    color: white;
     overflow: hidden;
+    transition: border-color 0.3s ease;
 }
 
-.hero-buttons:hover {
+.hero-buttons button:hover {
     border-color: #3dcfb6;
+}
+
+.hero-buttons button p {
+    text-shadow: 0 0 1px #3dcfb6, 32ch 0 1px #3dcfb6;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.hero-buttons button:hover p {
     color: transparent;
-    transition: border-color 1s ease-in-out;
+    transition: text-shadow 4s ease-in-out;
+    animation: buttonTextSlide 2s linear infinite;
+}
+
+@keyframes buttonTextSlide {
+    0% {
+        text-shadow:
+            0ch 0 #3dcfb6,
+            18ch 0 #3dcfb6;
+    }
+
+    100% {
+        text-shadow:
+            -18ch 0 #3dcfb6,
+            0ch 0 #3dcfb6;
+    }
 }
 
 .hero-right {
@@ -246,6 +273,7 @@ header {
 }
 
 @keyframes arrow-bounce {
+
     0%,
     100% {
         transform: translateY(0);
