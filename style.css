@@ -179,7 +179,7 @@ header {
 }
 
 .hero-buttons button p {
-    text-shadow: 0 0 1px #3dcfb6, 32ch 0 1px #3dcfb6;
+    /* text-shadow: 0 0 1px #3dcfb6, 32ch 0 1px #3dcfb6; */
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 100;
@@ -189,20 +189,6 @@ header {
     color: transparent;
     transition: text-shadow 4s ease-in-out;
     animation: buttonTextSlide 2s linear infinite;
-}
-
-@keyframes buttonTextSlide {
-    0% {
-        text-shadow:
-            0ch 0 #3dcfb6,
-            18ch 0 #3dcfb6;
-    }
-
-    100% {
-        text-shadow:
-            -18ch 0 #3dcfb6,
-            0ch 0 #3dcfb6;
-    }
 }
 
 .hero-right {
@@ -270,6 +256,63 @@ header {
     animation: arrow-bounce 1.1s ease-in-out infinite;
     transform-box: fill-box;
     transform-origin: center;
+}
+
+.banner-wrapper {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: unset;
+    color: transparent;
+    font-size: 32px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    width: 100%;
+    gap: 16px;
+    padding: 4px 8px;
+    background-color: #373a39;
+    white-space: nowrap;
+    opacity: .8;
+    transform: rotate(-3deg);
+    /* border: 1px solid red; */
+    animation: bannerTextSlide 10s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes buttonTextSlide {
+    0% {
+        text-shadow:
+            0ch 0 #3dcfb6,
+            18ch 0 #3dcfb6;
+    }
+
+    100% {
+        text-shadow:
+            -18ch 0 #3dcfb6,
+            0ch 0 #3dcfb6;
+    }
+}
+
+@keyframes bannerTextSlide {
+    0% {
+        text-shadow:
+            0ch 0 #3dcfb6,
+            78ch 0 #3dcfb6;
+    }
+
+    100% {
+        text-shadow:
+            -78ch 0 #3dcfb6,
+            0ch 0 #3dcfb6;
+    }
 }
 
 @keyframes arrow-bounce {
