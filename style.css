@@ -324,6 +324,12 @@ header {
     opacity: 1;
 }
 
+.section-name {
+    color: #3dcfb6; 
+    font-size: 24px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
 .info-container {
     display: flex;
     position: relative;
