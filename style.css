@@ -263,7 +263,8 @@ header {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
+    /* width: 100vw; */
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -325,9 +326,10 @@ header {
 }
 
 .section-name {
-    color: #3dcfb6; 
+    color: #3dcfb6;
     font-size: 24px;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    padding-bottom: 16px;
 }
 
 .info-container {
@@ -335,7 +337,7 @@ header {
     position: relative;
     max-width: 460px;
     top: 96px;
-    gap: 16px;
+    /* gap: 16px; */
     flex-direction: column;
     /* border: 1px solid red; */
 }
@@ -351,6 +353,12 @@ header {
     gap: 16px;
 }
 
+.info h2 {
+    color: #3dcfb6;
+    font-size: 64px;
+    font-family: 'Fira Code', monospace;
+}
+
 .info-row {
     display: flex;
     justify-content: center;
@@ -360,6 +368,86 @@ header {
 .info-row img {
     width: 24px;
     height: 24px;
+}
+
+.technologies-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    display: flex;
+    gap: 16px;
+}
+
+.skill-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 100%;
+    /* flex: 0 1 520px; */
+    background-color: #1f2e2b;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #3dcfb6;
+    gap: 16px;
+    color: #ffffff;
+}
+
+.skill-left h2 {
+    color: #3dcfb6;
+    font-size: 64px;
+    font-family: 'Fira Code', monospace;
+}
+
+.skill-introduction-text {
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
+.skill-button-container {
+    display: flex;
+    gap: 24px;
+    height: 48px;
+}
+
+.skill-button-container button {
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 24px;
+    min-width: 150px;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+}
+
+.skill-right {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,
+            minmax(min(105px, 100%), 105px));
+    align-items: start;
+}
+
+.single-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Fira Code', monospace;
+    gap: 8px;
+    text-align: center;
+}
+
+.single-skill img {
+    width: 60px;
+    height: 60px;
+}
+
+.single-skill p {
+    width: 105px;
+    text-align: center;
 }
 
 @keyframes buttonTextSlide {
