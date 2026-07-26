@@ -392,16 +392,13 @@ header {
     border: 1px solid #3dcfb6;
     gap: 16px;
     color: #ffffff;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
 
 .skill-left h2 {
     color: #3dcfb6;
     font-size: 64px;
     font-family: 'Fira Code', monospace;
-}
-
-.skill-introduction-text {
-    font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
 
 .skill-button-container {
@@ -418,6 +415,17 @@ header {
     background-color: transparent;
     color: white;
     overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.skill-button-container button:hover {
+    border-color: #3dcfb6;
+}
+
+.skill-button-container button:hover p {
+    color: transparent;
+    transition: text-shadow 4s ease-in-out;
+    animation: buttonTextSlide 2s linear infinite;
 }
 
 .skill-right {
