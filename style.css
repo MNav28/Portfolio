@@ -458,6 +458,76 @@ header {
     text-align: center;
 }
 
+.projects-wrapper {
+    color: #3dcfb6;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.all-projects {
+    display: flex;
+    width: 100%;
+    padding-top: 32px;
+    gap: 64px;
+    position: relative;
+}
+
+.project-names {
+    width: 100%;
+    position: relative;
+}
+
+.single-project-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Fira Code', monospace;
+    height: 100px;
+    border-top: 1px solid #3dcfb6;
+    color: #ffffff;
+    padding: 0 16px;
+}
+
+.single-project-name:hover {
+    background-color: #2f5b54;
+    cursor: pointer;
+}
+
+.single-project-name-left {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-project-name-left img {
+    display: none;
+    object-fit: cover;
+}
+
+.technologies {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 8px;
+}
+
+.technologies div {
+    color: #3dcfb6;
+}
+
+.project-hover-image {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
 @keyframes buttonTextSlide {
     0% {
         text-shadow:
