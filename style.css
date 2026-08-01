@@ -528,6 +528,10 @@ header {
     max-width: 400px;
 }
 
+.d-none {
+    display: none;
+}
+
 @keyframes buttonTextSlide {
     0% {
         text-shadow:
