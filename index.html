@@ -220,7 +220,7 @@
             </div>
             <div class="all-projects">
                 <div class="project-names">
-                    <div class="single-project-name" data-project="join">
+                    <div class="single-project-name" data-project="join" onclick="openProjectPopup('join')">
                         <div class="single-project-name-left">
                             <p>Join</p>
                             <img src="./assets/icons/arrow_outward.svg" alt="arrow icon">
@@ -237,7 +237,7 @@
 
                     </div>
                     <div class="single-project-name" data-project="pollo-loco"
-                        style="border-bottom: 1px solid rgb(61, 207, 182);">
+                        style="border-bottom: 1px solid rgb(61, 207, 182);" onclick="openProjectPopup('pollo-loco')">
                         <div class="single-project-name-left">
                             <p>Pollo Loco</p>
                             <img src="./assets/icons/arrow_outward.svg" alt="arrow icon">
@@ -261,7 +261,7 @@
                     </div>
                 </div>
             </div>
-            <div id="project-overlay" class="project-overlay">
+            <div id="project-overlay" class="project-overlay d-none">
                 <div id="popup-content" class="popup-content">
                     test
                 </div>
@@ -275,9 +275,9 @@
 
 
 
-
-    <script src="./script.js"></script>
     <script src="./project_data.js"></script>
+    <script src="./script.js"></script>
+
 
 </body>
 
