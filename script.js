@@ -25,33 +25,34 @@ function getProjectImage(projectName) {
     );
 }
 
-function openProjectPopup(project) {
-    let proj = 'join'
+function openProjectPopup(projectId) {
+    let selectedProject;
+    for (let i = 0; i < projects.length; i++) {
+        if (projects[i].id === projectId) {
+            selectedProject = projects[i];
+            break;
+        }
+    }
 
-    if (project == proj) {
-        console.log('popup opened for join')
-    } else (
-        console.log('popup opened for pollo loco')
-    );
+    if (!selectedProject) {
+        return;
+    }
 
+    renderPopupTemplate(selectedProject);
+    const overlay = document.getElementById('project-overlay');
+    overlay.classList.remove('d-none');
 }
 
-function renderPopupTemplate() {
+function renderPopupTemplate(selectedProject) {
     let content = document.getElementById('popup-content');
-    content.innerHTML = '';
-    for (let i = 0; i < projects.length; i++) {
-        
-    }
-    return /*html*/ `
+    content.innerHTML = /*html*/ `
         <div class="popup-wrapper">
             <div class="popup-left-container">
-                <h2></h2>
-                <p></p>
-                <p>What is this project about?</p>
-                <p class="description"></p>
-                <div class="tech-icons">
-
-                </div>
+                <h2>${selectedProject.project_nr}</h2>
+                <p class="project-name">${selectedProject.title}</p>
+                <p class="project-about">What is this project about?</p>
+                <p class="project-description">${selectedProject.description}</p>
+                <div class="tech-icons" id="tech-icons"></div>
                 <div class="popup-button">
                     <button>GitHub</button>
                     <button>LiveTest</button>
@@ -60,8 +61,8 @@ function renderPopupTemplate() {
             </div>
 
             <div class="popup-right-container">
-                <img src="./assets/icons/close_small.svg" alt="close icon">
-                <img src="" alt="">
+                <img src="./assets/icons/close_small.svg" alt="close icon" onclick="closePopup()">
+                <img src="${selectedProject.image}" alt="">
                 <div>
                     <p>Next project</p>
                 </div>
@@ -69,4 +70,24 @@ function renderPopupTemplate() {
 
         </div>
     `
+    const techIcons = document.getElementById('tech-icons');
+    for (let i = 0; i < selectedProject.tech.length; i++) {
+        techIcons.innerHTML += `
+            <div class="single-tech">
+                <img src="${selectedProject.tech[i].image}" alt="Technology icon">
+                <p>${selectedProject.tech[i].name}</p>
+            </div>
+            
+        `;
+    }
+
+}
+
+function generateHtmlTemplate() {
+
+}
+
+function closePopup() {
+    const overlay = document.getElementById('project-overlay');
+    overlay.classList.add('d-none');
 }

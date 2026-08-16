@@ -550,6 +550,8 @@ header {
     background: linear-gradient(45deg, #1c1c1c 0% 45%, #08463b 70% 100%);
     padding: 48px;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    color: white;
+    gap: 32px;
 }
 
 .popup-right-container {
@@ -564,6 +566,42 @@ header {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.popup-left-container>h2 {
+    font-size: 112px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    color: #3dcfb6;
+}
+
+.project-name {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Fira Code', monospace;
+}
+
+.project-about {
+    font-family: 'Fira Code', monospace;
+    color: #3dcfb6;
+}
+
+.project-description {
+    font-size: 18px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 16px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #3dcfb6;
+}
+
+.single-tech{
+    display: flex;
+    gap: 4px;
 }
 
 .popup-button {
