@@ -466,6 +466,17 @@ header {
     padding-bottom: 64px;
 }
 
+.project-section-name {
+    color: #3dcfb6;
+    font-size: 24px;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
+.projects-wrapper h2 {
+    font-size: 64px;
+    font-family: 'Fira Code', monospace;
+}
+
 .all-projects {
     display: flex;
     width: 100%;
@@ -562,6 +573,20 @@ header {
     flex-direction: column;
 }
 
+.popup-right-container>img {
+    width: 520px;
+    height: auto;
+}
+
+.close-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 .popup-left-container {
     display: flex;
     flex-direction: column;
@@ -599,7 +624,7 @@ header {
     color: #3dcfb6;
 }
 
-.single-tech{
+.single-tech {
     display: flex;
     gap: 4px;
 }
@@ -609,6 +634,50 @@ header {
     gap: 16px;
     height: 48px;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
+.popup-button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 24px;
+    min-width: 150px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.popup-button a:hover {
+    color: #3dcfb6;
+    border-color: #3dcfb6;
+}
+
+.popup-button button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.next-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 18px;
+    color: #3dcfb6;
+}
+
+.next-project svg {
+    transition: transform .3s ease-in-out;
+    width: 28px;
+    height: 28px;
+}
+
+.next-project:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 .d-none {
