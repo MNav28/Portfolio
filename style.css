@@ -650,7 +650,6 @@ header {
 }
 
 .popup-button a:hover {
-    color: #3dcfb6;
     border-color: #3dcfb6;
 }
 
@@ -658,6 +657,10 @@ header {
     background-color: transparent;
     border: none;
     color: #ffffff;
+}
+
+.popup-button a:hover button {
+    color: #3dcfb6;
 }
 
 .next-project {
