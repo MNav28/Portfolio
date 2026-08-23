@@ -653,6 +653,14 @@ header {
     border-color: #3dcfb6;
 }
 
+.popup-button a svg {
+    transition: transform .3s ease-in-out;
+}
+
+.popup-button a:hover svg {
+    transform: translate(3px, -3px);
+}
+
 .popup-button button {
     background-color: transparent;
     border: none;
@@ -681,6 +689,10 @@ header {
 .next-project:hover {
     color: #fff;
     cursor: pointer;
+}
+
+.next-project:hover svg {
+    transform: translateX(3px);
 }
 
 .d-none {
