@@ -655,10 +655,11 @@ header {
 
 .popup-button a svg {
     transition: transform .3s ease-in-out;
+    transform: translate(0, 4px);
 }
 
 .popup-button a:hover svg {
-    transform: translate(3px, -3px);
+     transform: translate(3px, 1px);
 }
 
 .popup-button button {
