@@ -1,4 +1,5 @@
 const projectNames = document.querySelectorAll('.single-project-name');
+let currentProjectIndex = 0;
 
 projectNames.forEach(project => {
     project.addEventListener('mouseenter', showProjectImage);
@@ -30,6 +31,7 @@ function openProjectPopup(projectId) {
     for (let i = 0; i < projects.length; i++) {
         if (projects[i].id === projectId) {
             selectedProject = projects[i];
+            currentProjectIndex = i
             break;
         }
     }
@@ -92,7 +94,7 @@ function generateHtmlTemplate(selectedProject) {
                     <img src="./assets/icons/close_small.svg" alt="close icon" onclick="closePopup()">
                 </div>
                 <img src="${selectedProject.image}" alt="">
-                <div class="next-project">
+                <div class="next-project" onclick="nextProject()">
                     <p>Next project</p>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_3296_3475" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
@@ -125,4 +127,14 @@ function renderTechIcons(selectedProject) {
 function closePopup() {
     const overlay = document.getElementById('project-overlay');
     overlay.classList.add('d-none');
+}
+
+function nextProject() {
+    currentProjectIndex++;
+
+    if (currentProjectIndex >= projects.length) {
+        currentProjectIndex = 0;
+    }
+
+    renderPopupTemplate(projects[currentProjectIndex]);
 }
