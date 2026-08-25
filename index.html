@@ -268,7 +268,59 @@
             </div>
 
         </div>
+        <div class="contact-me-wrapper">
+            <div class="cm-left-container">
+                <p>Contact Me</p>
+                <h2>Lets's work together</h2>
+                <p>Got a problem to solve?</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, blanditiis molestiae. Ducimus doloribus voluptas saepe nemo ex obcaecati qui blanditiis deserunt ea laborum eum modi pariatur ullam, iusto itaque omnis? </p>
+                <br>
+                <p>
+                    Need a Frontend Developer?
+                    <span>Let's talk!</span>
+                </p>
+            </div>
+            <div class="cm-right-container">
+                <form>
+                    <label for="name">
+                        <p>What's your name</p>
+                    </label>
+                    <div class="input-container">
+                        <input type="text" id="name" name="name" minlength="2" required
+                            placeholder="Your name goes here">
+                    </div>
+                    <label for="email">
+                        <p>What's your email?</p>
+                    </label>
+                    <div class="input-container">
+                        <input type="text" id="email" name="email" required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="youremail@email.de">
+                    </div>
+                    <label for="message">
+                        <p>How can I help you?</p>
+                    </label>
+                    <div class="input-container">
+                        <textarea rows="1" name="message" id="message" required minlength="5"
+                            placeholder="Hello Michael, I am interested in..."></textarea>
+                    </div>
+                    <label class="checkbox-container">
+                        <input type="checkbox" name="privacyPolicy" id="my-checkbox" class="checkbox">
+                        <span class="custom-checkbox"></span>
+                        <p> I've read the <span routerlink="/privacy-policy" tabindex="0">privacy policy</span> and
+                            agree to the processing of my data as outlined </p>
+                    </label>
+                    <div class="submit-button">
+                        <button type="submit" disabled>
 
+                        </button>
+                    </div>
+
+
+                </form>
+            </div>
+
+
+        </div>
     </div>
 
 
