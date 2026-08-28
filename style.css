@@ -721,7 +721,7 @@ header {
 }
 
 .cm-left-container h2 {
-    color: #3dcfb6;
+    /* color: #3dcfb6; */
     font-size: 64px;
     font-family: 'Fira Code', monospace;
 }
@@ -788,6 +788,12 @@ header {
     resize: none;
 }
 
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #ffffff;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
 .checkbox-container {
     font-size: 16px;
     gap: 8px;
@@ -798,7 +804,8 @@ header {
 }
 
 .checkbox-container p {
-    columns: #ffffff;
+    color: #ffffff;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
 
 .checkbox-container .checkbox {
@@ -807,6 +814,12 @@ header {
     cursor: pointer;
     height: 0;
     width: 0;
+}
+
+.checkbox-container p span {
+    color: #3dcfb6;
+    cursor: pointer;
+    font-family: 'Fira Code', monospace;
 }
 
 .checkbox-container .custom-checkbox {
@@ -848,8 +861,6 @@ header {
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
-
-
 
 .d-none {
     display: none;
