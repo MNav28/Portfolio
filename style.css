@@ -539,6 +539,26 @@ header {
     max-width: 400px;
 }
 
+.project-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+.project-image.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .project-overlay {
     display: flex;
     justify-content: center;

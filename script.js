@@ -10,14 +10,14 @@ function showProjectImage(event) {
     const projectName = event.currentTarget.dataset.project;
     const matchingImage = getProjectImage(projectName);
 
-    matchingImage.classList.remove('d-none');
+    matchingImage.classList.add('active');
 }
 
 function hideProjectImage(event) {
     const projectName = event.currentTarget.dataset.project;
     const matchingImage = getProjectImage(projectName);
 
-    matchingImage.classList.add('d-none');
+    matchingImage.classList.remove('active');
 }
 
 function getProjectImage(projectName) {
