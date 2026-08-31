@@ -103,14 +103,38 @@ header {
 
 .logo p {
     color: #ffffff;
-    font-size: 23px;
+    font-size: 30px;
     font-family: 'Fira Code', monospace;
+    transition: color 0.25s ease, -webkit-text-stroke 0.25s ease;
 }
 
-.logo img {
+/* .logo img {
     filter: invert(72%) sepia(42%) saturate(600%) hue-rotate(125deg);
     width: 90px;
     height: auto;
+} */
+
+
+.logo svg {
+    width: 110px;
+    height: auto;
+}
+
+.mn-logo-path {
+    fill: #3dcfb6;
+    stroke: #3dcfb6;
+    stroke-width: 0;
+    transition: fill 0.25s ease, stroke-width 0.25s ease;
+}
+
+.logo:hover .mn-logo-path {
+    fill: transparent;
+    stroke-width: 15;
+}
+
+.logo:hover p {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
 }
 
 .above-the-fold {
