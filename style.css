@@ -926,6 +926,8 @@ header {
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     width: 100%;
     min-height: 128px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer-left {
