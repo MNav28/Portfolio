@@ -294,6 +294,7 @@
                     <div class="input-container">
                         <input type="text" id="name" name="name" minlength="2" required
                             placeholder="Your name goes here">
+                        <p class="error-message">Oops! it seems like your name is missing.</p>
                     </div>
                     <label for="email">
                         <p>What's your email?</p>
@@ -301,6 +302,7 @@
                     <div class="input-container">
                         <input type="text" id="email" name="email" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" placeholder="youremail@email.de">
+                        <p class="error-message">Oops! Your email address is required.</p>
                     </div>
                     <label for="message">
                         <p>How can I help you?</p>
@@ -308,6 +310,7 @@
                     <div class="input-container">
                         <textarea rows="1" name="message" id="message" required minlength="5"
                             placeholder="Hello Michael, I am interested in..."></textarea>
+                        <p class="error-message">What do you need to develope?</p>
                     </div>
                     <label class="checkbox-container">
                         <input type="checkbox" name="privacyPolicy" id="my-checkbox" class="checkbox">
