@@ -61,7 +61,7 @@ function generateHtmlTemplate(selectedProject) {
                 <p class="project-description">${selectedProject.description}</p>
                 <div class="tech-icons" id="tech-icons"></div>
                 <div class="popup-button">
-                    <a target="_blank" href="">
+                    <a target="_blank" href="#">
                         <button>GitHub
                             <svg width="18" height="18" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_6063_2668" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
@@ -73,7 +73,7 @@ function generateHtmlTemplate(selectedProject) {
                             </svg>
                         </button>
                     </a>
-                    <a target="_blank" href="">
+                    <a target="_blank" href="#">
                         <button>LiveTest
                             <svg width="18" height="18" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_6063_2668" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">

@@ -719,6 +719,7 @@ header {
 }
 
 .popup-button button {
+    cursor: pointer;
     background-color: transparent;
     border: none;
     color: #ffffff;
