@@ -891,7 +891,6 @@ header {
 }
 
 .error-message {
-    display: none;
     position: absolute;
     left: 52px;
     top: calc(100% - 6px);
