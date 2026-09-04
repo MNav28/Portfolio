@@ -90,10 +90,11 @@ function generateHtmlTemplate(selectedProject) {
             </div>
 
             <div class="popup-right-container">
-                <div class="close-popup">
-                    <img src="./assets/icons/close_small.svg" alt="close icon" onclick="closePopup()">
+                <div class="close-popup" onclick="closePopup()">
+                    <img class="close-button-small" src="./assets/icons/close_small.svg" alt="close icon">
+                    <img class="close-button-big" src="./assets/icons/close_big.svg" alt="close icon">
                 </div>
-                <img src="${selectedProject.image}" alt="">
+                <img src="${selectedProject.image}" alt="project image">
                 <div class="next-project" onclick="nextProject()">
                     <p>Next project</p>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">

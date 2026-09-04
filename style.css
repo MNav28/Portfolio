@@ -635,12 +635,38 @@ header {
 }
 
 .close-popup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
+    position: relative;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
+}
+
+.close-popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.close-button-small {
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+
+.close-button-big {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+}
+
+.close-popup:hover .close-button-small {
+    opacity: 0;
+}
+
+.close-popup:hover .close-button-big {
+    opacity: 1;
 }
 
 .popup-left-container {
