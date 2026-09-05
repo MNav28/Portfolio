@@ -779,6 +779,61 @@ header {
     transform: translateX(3px);
 }
 
+.feedback-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Karla', Arial, Helvetica, sans-serif;
+}
+
+.feedback-wrapper h2 {
+    color: #3dcfb6;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.slider-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.slider-buttons button svg {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.slider-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.slider-buttons button:hover .svg-left {
+    transform: translateX(-5px);
+}
+
+.slider-buttons button:hover .svg-right {
+    transform: translateX(5px);
+}
+
+.slider-buttons button:hover svg path {
+    fill: #3dcfb6;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    margin: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #444444;
+}
+
 .contact-me-wrapper {
     display: flex;
     width: 100%;
