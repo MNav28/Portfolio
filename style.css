@@ -793,6 +793,41 @@ header {
     font-weight: 700;
 }
 
+.feedback-cards {
+    display: flex;
+    width: 100%;
+    gap: 12px;
+}
+
+.single-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 274px;
+    width: min(632px);
+    background-color: #26524b;
+    border: 1px solid rgba(61, 207, 182, 1);
+    border-radius: 32px;
+    color: #ffffff;
+    text-align: center;
+    padding: 48px 40px 48px 40px;
+}
+
+.footer-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.footer-line {
+    flex: 1;
+    min-width: 30px;
+    height: 1px;
+    background-color: #ffffff;
+}
+
 .slider-buttons {
     display: flex;
     align-items: center;

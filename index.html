@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body onload="init()">
 
 
     <div class="wrapper">
@@ -276,7 +276,7 @@
 
             </div>
             <div class="slider-buttons">
-                <button>
+                <button onclick="prevCard()">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-left">
                         <mask id="mask0_126753_3141" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4"
                             width="32" height="32">
@@ -295,7 +295,7 @@
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
-                <button>
+                <button onclick="nextCard()">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-right">
                         <mask id="mask0_3296_3441" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="4"
                             width="32" height="32">

@@ -1,6 +1,10 @@
 const projectNames = document.querySelectorAll('.single-project-name');
 let currentProjectIndex = 0;
 
+function init() {
+    renderFeedbacks();
+}
+
 projectNames.forEach(project => {
     project.addEventListener('mouseenter', showProjectImage);
     project.addEventListener('mouseleave', hideProjectImage);
@@ -138,4 +142,29 @@ function nextProject() {
     }
 
     renderPopupTemplate(projects[currentProjectIndex]);
+}
+
+function renderFeedbacks() {
+    let feedbackContent = document.getElementById('feedback-cards');
+    for (let i = 0; i < feedbackCards.length; i++) {
+        feedbackContent.innerHTML += /*html*/`
+        <div class="single-card">
+            <p>${feedbackCards[i].feedback.de}</p>
+            <div class="footer-card">
+                <div class="footer-line"></div>
+                <p>${feedbackCards[i].name} - ${feedbackCards[i].relation.de}</p>
+            </div>
+        </div>
+       
+        
+        `
+    }
+}
+
+function nextCard() {
+
+}
+
+function prevCard() {
+    
 }
