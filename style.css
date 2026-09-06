@@ -784,6 +784,7 @@ header {
     align-items: center;
     flex-direction: column;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    gap: 20px;
 }
 
 .feedback-wrapper h2 {

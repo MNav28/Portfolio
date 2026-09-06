@@ -52,9 +52,54 @@ const projects = [
 ];
 
 
-function showItem() {
-    let myItem = projects[1].project_nr
+const feedbackCards = [
+    {
+        id: "1",
+        feedback: {
+            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
+            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+        },
+        name: "K. Mustermann",
+        relation: {
+            de: "Vater",
+            en: "Dad",
+        },
+    },
+    {
+        id: "2",
+        feedback: {
+            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
+            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+        },
+        name: "T. Schulz",
+        relation: {
+            de: "Kollege",
+            en: "Collegue",
+        },
+    },
+    {
+        id: "3",
+        feedback: {
+            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
+            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+        },
+        name: "T. Meier",
+        relation: {
+            de: "Nachbar",
+            en: "Neighbour",
+        },
+    },
+    {
+        id: "4",
+        feedback: {
+            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
+            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+        },
+        name: "C. Alcaraz",
+        relation: {
+            de: "Bruder",
+            en: "Brother",
+        },
+    }
 
-    console.log(myItem)
-
-}
+]
