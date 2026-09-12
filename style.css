@@ -909,6 +909,10 @@ header {
     background-color: #444444;
 }
 
+.dot.active {
+    background-color: #3dcfb6;
+}
+
 .contact-me-wrapper {
     display: flex;
     width: 100%;

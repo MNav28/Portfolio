@@ -179,6 +179,8 @@ function updateFeedbackCards() {
             card.classList.add('hidden');
         }
     });
+
+    updateDots();
 }
 
 function getPreviousIndex() {
@@ -193,6 +195,16 @@ function getNextIndex() {
         return 0;
     }
     return currentFeedbackIndex + 1;
+}
+
+function updateDots() {
+    const dots = document.querySelectorAll('.dot');
+
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+    
+    dots[currentFeedbackIndex].classList.add('active');
 }
 
 function nextCard() {
