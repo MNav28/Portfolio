@@ -1,5 +1,6 @@
 const projectNames = document.querySelectorAll('.single-project-name');
 let currentProjectIndex = 0;
+let currentFeedbackIndex = 0;
 
 function init() {
     renderFeedbacks();
@@ -146,6 +147,7 @@ function nextProject() {
 
 function renderFeedbacks() {
     let feedbackContent = document.getElementById('feedback-cards');
+    feedbackContent.innerHTML = '';
     for (let i = 0; i < feedbackCards.length; i++) {
         feedbackContent.innerHTML += /*html*/`
         <div class="single-card">
@@ -155,16 +157,60 @@ function renderFeedbacks() {
                 <p>${feedbackCards[i].name} - ${feedbackCards[i].relation.de}</p>
             </div>
         </div>
-       
-        
+                
         `
     }
+    updateFeedbackCards();
+}
+
+function updateFeedbackCards() {
+    let cards = document.querySelectorAll('.single-card');
+
+    cards.forEach((card, index) => {
+        card.classList.remove('active', 'left', 'right', 'hidden');
+
+        if (index === currentFeedbackIndex) {
+            card.classList.add('active');
+        } else if (index === getPreviousIndex()) {
+            card.classList.add('left');
+        } else if (index === getNextIndex()) {
+            card.classList.add('right');
+        } else {
+            card.classList.add('hidden');
+        }
+    });
+}
+
+function getPreviousIndex() {
+    if (currentFeedbackIndex === 0) {
+        return feedbackCards.length - 1;
+    }
+    return currentFeedbackIndex - 1;
+}
+
+function getNextIndex() {
+    if (currentFeedbackIndex === feedbackCards.length - 1) {
+        return 0;
+    }
+    return currentFeedbackIndex + 1;
 }
 
 function nextCard() {
+    currentFeedbackIndex++;
 
+    if (currentFeedbackIndex >= feedbackCards.length) {
+        currentFeedbackIndex = 0;
+    }
+
+    updateFeedbackCards();
 }
 
 function prevCard() {
-    
+    currentFeedbackIndex--;
+
+    if (currentFeedbackIndex < 0) {
+        currentFeedbackIndex = feedbackCards.length - 1;
+    }
+
+    updateFeedbackCards();
 }
