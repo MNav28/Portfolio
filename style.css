@@ -1137,6 +1137,7 @@ body.popup-open {
     min-height: 128px;
     padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 130px;
 }
 
 .footer-left {
