@@ -48,6 +48,7 @@ function openProjectPopup(projectId) {
     renderPopupTemplate(selectedProject);
     const overlay = document.getElementById('project-overlay');
     overlay.classList.remove('d-none');
+    document.body.classList.add('popup-open');
 }
 
 function renderPopupTemplate(selectedProject) {
@@ -133,6 +134,7 @@ function renderTechIcons(selectedProject) {
 function closePopup() {
     const overlay = document.getElementById('project-overlay');
     overlay.classList.add('d-none');
+    document.body.classList.remove('popup-open');
 }
 
 function nextProject() {
