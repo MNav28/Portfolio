@@ -948,6 +948,12 @@ body.popup-open {
     background-color: #3dcfb6;
 }
 
+.quote {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+}
+
 .contact-me-wrapper {
     display: flex;
     width: 100%;
