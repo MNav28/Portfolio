@@ -300,8 +300,8 @@ header {
     bottom: 80px;
     left: 50%;
     transform: translateX(-50%);
-    /* width: 100vw; */
-    width: 100%;
+    width: 100vw;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
 }
