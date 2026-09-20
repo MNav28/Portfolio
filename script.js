@@ -153,7 +153,7 @@ function renderFeedbacks() {
     for (let i = 0; i < feedbackCards.length; i++) {
         feedbackContent.innerHTML += /*html*/`
         <div class="single-card">
-            <p>${feedbackCards[i].feedback.de}</p>
+            <p>${feedbackCards[i].feedback.en}</p>
             <div class="footer-card">
                 <div class="footer-line"></div>
                 <p>${feedbackCards[i].name} - ${feedbackCards[i].relation.de}</p>

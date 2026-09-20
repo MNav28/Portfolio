@@ -56,8 +56,8 @@ const feedbackCards = [
     {
         id: "1",
         feedback: {
-            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
-            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+            de: `Michael ist ein zuverlässiger und engagierter Teamkollege, auf den man sich jederzeit verlassen kann. Er bringt sich aktiv in die Zusammenarbeit ein und unterstützt andere, wenn es darauf ankommt. Durch seine ruhige und offene Art ist die Zusammenarbeit mit ihm sehr angenehm.`,
+            en: `Michael is a reliable and committed team member who can always be counted on. He actively contributes to the team and is always willing to support others when needed. His calm and open-minded approach makes working with him a great experience.`
         },
         name: "K. Mustermann",
         relation: {
@@ -68,8 +68,8 @@ const feedbackCards = [
     {
         id: "2",
         feedback: {
-            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
-            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+            de: `Michael geht auch komplexe Aufgaben strukturiert an und verliert dabei nicht den Überblick. Er probiert verschiedene Lösungswege aus und gibt nicht auf, wenn etwas nicht auf Anhieb funktioniert. Besonders seine Ausdauer und sein analytisches Denken zeichnen ihn aus.`,
+            en: `Michael approaches complex tasks in a structured way without losing sight of the bigger picture. He explores different approaches and doesn't give up when things don't work out right away. His persistence and analytical thinking really stand out.`
         },
         name: "T. Schulz",
         relation: {
@@ -80,8 +80,8 @@ const feedbackCards = [
     {
         id: "3",
         feedback: {
-            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
-            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+            de: `Michael zeigt eine hohe Lernbereitschaft und arbeitet sich schnell in neue Themen und Technologien ein. Er wartet nicht darauf, dass ihm Lösungen vorgegeben werden, sondern sucht selbstständig nach Möglichkeiten, Probleme zu lösen und seine Kenntnisse weiterzuentwickeln.`,
+            en: `Michael is highly motivated to learn and quickly gets up to speed with new topics and technologies. He takes initiative, looks for solutions independently, and is always willing to expand his knowledge and improve his skills.`
         },
         name: "T. Meier",
         relation: {
@@ -92,8 +92,8 @@ const feedbackCards = [
     {
         id: "4",
         feedback: {
-            de: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`,
-            en: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti asperiores eius impedit quisquam alias maiores sequi, expedita quas tempore, cumque placeat commodi esse accusamus excepturi omnis. Laudantium, minima. Aliquam!`
+            de: `Die Zusammenarbeit mit Michael ist unkompliziert und konstruktiv. Er kommuniziert offen, bringt eigene Ideen ein und ist gleichzeitig immer bereit, andere Ansätze anzunehmen. Dadurch trägt er zu einer positiven und produktiven Teamatmosphäre bei.`,
+            en: `Working with Michael is straightforward and constructive. He communicates openly, contributes his own ideas, and is always willing to consider different approaches. His positive attitude contributes to a productive and enjoyable team environment.`
         },
         name: "C. Alcaraz",
         relation: {
