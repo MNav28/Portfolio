@@ -329,7 +329,7 @@ header {
 
 .banner-wrapper {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 50%;
     width: 100vw;
     overflow: hidden;
@@ -337,27 +337,32 @@ header {
 }
 
 .banner {
-    width: 100%;
-    overflow: hidden;
+    display: flex;
+    height: 62px;
+    width: max-content;
     background-color: #373a39;
     opacity: 0.8;
+    animation: bannerTextSlide 20s linear infinite;
 }
 
-.banner-track {
+/* .banner-track {
     display: flex;
     width: max-content;
     animation: bannerTextSlide 10s linear infinite;
-}
+} */
 
 .banner-content {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 43px;
+    height: 100%;
     flex-shrink: 0;
     white-space: nowrap;
     padding-right: 32px;
+    font-weight: 400;
     font-size: 32px;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    color: rgba(61, 207, 182, 1);
 }
 
 .about-me-wrapper {
