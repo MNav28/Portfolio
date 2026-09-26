@@ -888,7 +888,8 @@ body.popup-open {
 
 .feedback-cards {
     position: relative;
-    width: 100%;
+    width: calc(100% + 160px);
+    margin-left: -80px;
     height: 374px;
     overflow: hidden;
 }
