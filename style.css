@@ -176,13 +176,13 @@ header {
     flex-direction: column;
     /* padding-top: 416px;
     padding-bottom: 16px; */
-    transform: translateY(600px);
+    transform: translateY(658px);
 }
 
 .hero-stroke {
     background-color: #3dcfb6;
     border: none;
-    height: 26%;
+    height: 19%;
     width: 1px;
 }
 
@@ -257,7 +257,7 @@ header {
     color: #ffffff;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     /* padding: 224px 0px 16px; */
-    transform: translateY(530px);
+    transform: translateY(592px);
 }
 
 .hero-right a:hover {
@@ -269,6 +269,8 @@ header {
 } */
 
 .full-mail {
+    display: flex;
+    align-items: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     white-space: nowrap;
@@ -287,27 +289,69 @@ header {
 }
 
 .linkedin-icon {
+    position: relative;
     width: 32px;
     height: 32px;
-    background-image: url("./assets/icons/Linkedin_normal.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.linkedin-icon:hover {
-    background-image: url("./assets/icons/Linkedin_hover.svg");
+.linkedin-icon svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.linkedin-icon:hover svg path {
+    fill: white;
+}
+
+.linkedin-icon::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 12px;
+    right: -12px;
+    background-color: #3dcfb6;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.linkedin-icon:hover::after {
+    opacity: 1;
 }
 
 .github-icon {
+    position: relative;
     width: 32px;
     height: 32px;
-    background-image: url("./assets/icons/GitHub_normal.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.github-icon:hover {
-    background-image: url("./assets/icons/GitHub_hover.svg");
+.github-icon svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.github-icon:hover svg path {
+    fill: white;
+}
+
+.github-icon::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 12px;
+    right: -12px;
+    background-color: #3dcfb6;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.github-icon:hover::after {
+    opacity: 1;
 }
 
 .scroll-arrow {
