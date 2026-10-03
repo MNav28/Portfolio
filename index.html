@@ -23,12 +23,12 @@
                         <div class="enabled">
                             <p>EN</p>
                         </div>
-                        <div class="disabled">
+                        <div class="disabled" onclick="changeLanguage('de')">
                             <p>DE</p>
                         </div>
                     </div>
                     <div class="nav-item">
-                        <a href="#about-me">About me</a>
+                        <a href="#about-me" data-i18n="nav.about">About me</a>
                         <p>·</p>
                     </div>
                     <div class="nav-item">
@@ -36,7 +36,7 @@
                         <p>·</p>
                     </div>
                     <div class="nav-item">
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" data-i18n="nav.projects">Projects</a>
                         <p>·</p>
                     </div>
                 </div>
@@ -72,14 +72,14 @@
                 <div class="hero-stroke"></div>
             </div>
             <div class="hero-middle">
-                <h2>Frontend Developer</h2>
+                <h2 data-i18n="hero.title">Frontend Developer</h2>
                 <h1>Michael Navarro</h1>
                 <div class="hero-buttons">
                     <button onclick="location.href ='#projects'">
-                        <p>Check my work</p>
+                        <p data-i18n="hero.work">Check my work</p>
                     </button>
                     <button onclick="location.href = '#contact-form'">
-                        <p>Contact me</p>
+                        <p data-i18n="hero.contact">Contact me</p>
                     </button>
                 </div>
             </div>
@@ -512,6 +512,7 @@
 
 
     <script src="./project_data.js"></script>
+    <script src="./translation.js"></script>
     <script src="./templates.js"></script>
     <script src="./script.js"></script>
 
