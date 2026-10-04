@@ -566,6 +566,11 @@ header {
     font-family: 'Fira Code', monospace;
 }
 
+.another-skill {
+    display: flex;
+    flex-direction: column;
+}
+
 .skill-left span {
     font-weight: 700; 
     font-size: 24px;
@@ -663,12 +668,17 @@ header {
 .projects-wrapper h2 {
     font-size: 64px;
     font-family: 'Fira Code', monospace;
+    padding-top: 18px;
+}
+
+.textfield-projects {
+    max-width: 456px;
+    padding: 42px 0 42px 0;
 }
 
 .all-projects {
     display: flex;
     width: 100%;
-    padding-top: 32px;
     gap: 64px;
     position: relative;
 }
