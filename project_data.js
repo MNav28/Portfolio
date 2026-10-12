@@ -32,7 +32,7 @@ const projects = [
         title: "Pollo Loco",
         github: "https://github.com/MNav28/el_pollo_loco",
         liveTest: "https://mnav28.github.io/el_pollo_loco/",
-        description: "A task manager inspired by the Kanban system: create and organize tasks using drag-and-drop functionality, assign users, and categorize tasks.",
+        description: "A 2D platformer adventure game based on object-oriented approach.",
         image: "./assets/img/polloloco.svg",
         tech: [
             {

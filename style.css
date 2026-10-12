@@ -572,7 +572,7 @@ header {
 }
 
 .skill-left span {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 24px;
     font-family: 'Fira Code', monospace;
 }
@@ -1120,7 +1120,7 @@ body.popup-open {
 .contact-me-wrapper {
     display: flex;
     width: 100%;
-    gap: 32px;
+    gap: 64px;
     color: #3dcfb6;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
 }
@@ -1159,6 +1159,11 @@ body.popup-open {
 
 .cm-left-container> :nth-child(6) span {
     color: #3dcfb6;
+}
+
+.contact-question {
+    display: flex;
+    gap: 16px;
 }
 
 .form-container {
@@ -1217,7 +1222,7 @@ body.popup-open {
 }
 
 .checkbox-container {
-    font-size: 16px;
+    font-size: 15px;
     gap: 8px;
     padding-bottom: 24px;
     position: relative;
@@ -1228,6 +1233,16 @@ body.popup-open {
 .checkbox-container p {
     color: #ffffff;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.checkbox-container a {
+    text-decoration: none;
+    color: rgba(61, 207, 182, 1);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .checkbox-container .checkbox {
@@ -1238,11 +1253,12 @@ body.popup-open {
     width: 0;
 }
 
-.checkbox-container p span {
-    color: #3dcfb6;
+/* .checkbox-container p span {
+     color: #3dcfb6;
     cursor: pointer;
     font-family: 'Fira Code', monospace;
-}
+
+} */
 
 .checkbox-container .custom-checkbox {
     position: relative;

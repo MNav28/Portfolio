@@ -18,7 +18,7 @@ const translations = {
             status: "Open to work"
         },
         info: {
-            title : "Who i am",
+            title: "Who i am",
             aboutMe: "About me",
             motivation: "I'm Michael, a Frontend Developer based in Munich, passionate about turning ideas into modern, intuitive, and functional web applications. What I particularly enjoy is the combination of creative design and technical implementation bringing individual components together to create a cohesive digital experience.",
             location: "I'm based in Munich and flexible when it comes to working arrangements. Whether in the office, hybrid, or remotely, I'm open to different ways of working and look forward to collaborating with a dedicated team.",
@@ -39,7 +39,23 @@ const translations = {
         },
         feedback: {
             title: "What my colleagues say about me",
-        }
+        },
+        contact: {
+            title: "Contact me",
+            h2: "Lets's work together",
+            problemSolve: "Got a problem to solve?",
+            content: "I'm always open to new opportunities and exciting projects where I can contribute my skills as a Frontend Developer. Whether you're looking to build a new website, improve an existing application, or have a problem that needs a solution, I'd be happy to hear from you. Let's talk about your ideas and see how I can contribute to your project. Feel free to get in touch. I'm looking forward to hearing from you! ",
+            question: "Do you need a Frontend Developer?",
+            questionHighlight: "Let's talk!",
+            formName: "What's your name",
+            formEmail: "What's your email?",
+            formMessage: "How can I help you?",
+            formNamePlaceholder: "Enter your name",
+            formMessagePlaceholder: "Hello Michael, I am interested in ...",
+            privacyStart: "I've read the",
+            privacyLink:"privacy policy",
+            privacyEnd: "and agree to the processing of my data as outlined",
+        },
     },
 
     de: {
@@ -52,14 +68,14 @@ const translations = {
             work: "Meine Projekte",
             contact: "Kontaktieren"
         },
-         banner: {
+        banner: {
             title: "Frontend Entwickler",
             location: "Komme aus München",
             available: "Verfügbar für Remote",
             status: "Offen für Arbeit"
         },
         info: {
-            title : "Wer ich bin",
+            title: "Wer ich bin",
             aboutMe: "Über mich",
             motivation: "Ich bin Michael, Frontend Entwickler aus München und begeistere mich dafür, Ideen in moderne, intuitive und funktionale Webanwendungen zu verwandeln. Besonders spannend finde ich die Verbindung aus kreativem Design und technischer Umsetzung aus einzelnen Komponenten ein stimmiges digitales Erlebnis zu entwickeln.",
             location: "Ich lebe in München und bin flexibel, wenn es um die Zusammenarbeit geht. Ob im Büro, hybrid oder remote, ich bin offen für unterschiedliche Arbeitsmodelle und freue mich auf die Zusammenarbeit in einem engagierten Team.",
@@ -74,13 +90,30 @@ const translations = {
             contact: "Kontaktiere mich gerne. Ich freue mich darauf, mein Wissen weiter auszubauen.",
             talk: "Lass uns reden",
         },
-         project: {
+        project: {
             title: "Ausgewählte Projekte",
             description: "Entdecke hier eine Auswahl meiner Arbeiten und interagiere mit den Projekten, um meine Fähigkeiten in der Praxis zu sehen.",
         },
         feedback: {
             title: "Was Kollegen über mich sagen",
-        }
+        },
+        contact: {
+            title: "Kontaktiere mich",
+            h2: "Lass uns zusammenarbeiten",
+            problemSolve: "Gibt es ein Problem zu lösen?",
+            content: "Ich bin immer offen für neue Möglichkeiten und spannende Projekte, bei denen ich meine Fähigkeiten als Frontend-Entwickler einbringen kann. Egal, ob du eine neue Website entwickeln, eine bestehende Anwendung verbessern oder eine Herausforderung lösen möchtest - ich freue mich darauf, von dir zu hören. Lass uns über deine Ideen sprechen und gemeinsam herausfinden, wie ich dein Projekt unterstützen kann. Schreib mir gerne - ich freue mich auf deine Nachricht!",
+            question: "Brauchen Sie einen Frontend-Entwickler?",
+            questionHighlight: "Lass uns reden!",
+            formName: "Wie ist dein Name?",
+            formEmail: "Wie ist deine Email?",
+            formMessage: "Wie kann ich dir helfen?",
+            formNamePlaceholder: "Gib deinen Namen ein",
+            formMessagePlaceholder: "Hallo Michael, ich interessiere mich für ...",
+            privacyStart: "Ich habe die",
+            privacyLink:"Datenschutzerklärung",
+            privacyEnd: "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu",
+        },
+
     }
 };
 
@@ -95,8 +128,14 @@ function translatePage() {
 
     elements.forEach(element => {
         const key = element.dataset.i18n;
-
         element.textContent = getTranslation(key);
+    });
+
+    const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
+
+    placeholderElements.forEach(element => {
+        const key = element.dataset.i18nPlaceholder;
+        element.placeholder = getTranslation(key);
     });
 }
 
@@ -104,10 +143,10 @@ function getTranslation(key) {
     let translation = translations[currentLanguage];
     const keys = key.split(".");
 
-     for (const property of keys) {
-         translation = translation[property];
+    for (const property of keys) {
+        translation = translation[property];
     }
-    
+
     return translation;
 }
 

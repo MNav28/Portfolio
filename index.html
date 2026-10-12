@@ -421,33 +421,35 @@
         </div>
         <div class="contact-me-wrapper" id="contact-form">
             <div class="cm-left-container">
-                <p class="section-name">Contact Me</p>
-                <h2>Lets's work together</h2>
-                <p>Got a problem to solve?</p>
-                <p> I'm always open to new opportunities and exciting projects where I can contribute
+                <p class="section-name" data-i18n="contact.title">Contact Me</p>
+                <h2 data-i18n="contact.h2">Lets's work together</h2>
+                <p data-i18n="contact.problemSolve">Got a problem to solve?</p>
+                <p data-i18n="contact.content"> I'm always open to new opportunities and exciting projects where I can
+                    contribute
                     my skills as a Frontend Developer. Whether you're looking to build a new website, improve
                     an existing application, or have a problem that needs a solution, I'd be happy to hear from you.
 
                     Let's talk about your ideas and see how I can contribute to your project. Feel free to get in touch.
                     I'm looking forward to hearing from you! </p>
                 <br>
-                <p>
-                    Need a Frontend Developer?
-                    <span>Let's talk!</span>
-                </p>
+                <div class="contact-question">
+                    <p data-i18n="contact.question">Do you need a Frontend Developer?</p>
+                    <span data-i18n="contact.questionHighlight">Let's talk!</span>
+                </div>
+
             </div>
             <div class="cm-right-container">
                 <form class="form-container">
                     <label for="name">
-                        <p>What's your name</p>
+                        <p data-i18n="contact.formName">What's your name</p>
                     </label>
                     <div class="input-container">
-                        <input type="text" id="name" name="name" minlength="2" required
-                            placeholder="Your name goes here">
+                        <input type="text" id="name" name="name" minlength="2" required placeholder="Enter your name"
+                            data-i18n-placeholder="contact.formNamePlaceholder">
                         <p class="error-message d-none">Oops! it seems like your name is missing.</p>
                     </div>
                     <label for="email">
-                        <p>What's your email?</p>
+                        <p data-i18n="contact.formEmail">What's your email?</p>
                     </label>
                     <div class="input-container">
                         <input type="text" id="email" name="email" required
@@ -455,18 +457,28 @@
                         <p class="error-message d-none">Oops! Your email address is required.</p>
                     </div>
                     <label for="message">
-                        <p>How can I help you?</p>
+                        <p data-i18n="contact.formMessage">How can I help you?</p>
                     </label>
                     <div class="input-container">
                         <textarea rows="1" name="message" id="message" required minlength="5"
-                            placeholder="Hello Michael, I am interested in..."></textarea>
+                            placeholder="Hello Michael, I am interested in..."
+                            data-i18n-placeholder="contact.formMessagePlaceholder"></textarea>
                         <p class="error-message d-none">What do you need to develope?</p>
                     </div>
                     <label class="checkbox-container">
                         <input type="checkbox" name="privacyPolicy" id="my-checkbox" class="checkbox">
                         <span class="custom-checkbox"></span>
-                        <p> I've read the <span routerlink="/privacy-policy" tabindex="0">privacy policy</span> and
-                            agree to the processing of my data as outlined </p>
+                        <!-- <p> I've read the <span routerlink="/privacy-policy" tabindex="0">privacy policy</span> and
+                            agree to the processing of my data as outlined </p> -->
+                        <p>
+                            <span data-i18n="contact.privacyStart">I've read the</span>
+
+                            <a href="/privacy-policy" data-i18n="contact.privacyLink">privacy policy</a>
+
+                            <span data-i18n="contact.privacyEnd">
+                                and agree to the processing of my data as outlined
+                            </span>
+                        </p>
                     </label>
                     <div class="submit-button">
                         <button type="submit" disabled>
