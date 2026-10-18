@@ -60,6 +60,11 @@ const translations = {
             errorMessage: "What do you need to develope?",
             submit: "Say Hello ;)"
         },
+        footer: {
+            position: "Web Developer",
+            location: "Munich Germany",
+            impressum: "Legal Notice",
+        }
     },
 
     de: {
@@ -121,7 +126,11 @@ const translations = {
             errorMessage: "Was möchtest du entwickeln?",
             submit: "Los geht's ;)"
         },
-
+        footer: {
+            position: "Web Entwickler",
+            location: "München Deutschland",
+            impressum: "Impressum",
+        }
     }
 };
 
