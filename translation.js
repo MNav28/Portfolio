@@ -55,6 +55,10 @@ const translations = {
             privacyStart: "I've read the",
             privacyLink:"privacy policy",
             privacyEnd: "and agree to the processing of my data as outlined",
+            errorName: "Oops! it seems like your name is missing.",
+            errorEmail: "Oops! Your email address is required.",
+            errorMessage: "What do you need to develope?",
+            submit: "Say Hello ;)"
         },
     },
 
@@ -112,6 +116,10 @@ const translations = {
             privacyStart: "Ich habe die",
             privacyLink:"Datenschutzerklärung",
             privacyEnd: "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu",
+            errorName: "Oops! Es scheint, als würde dein Name fehlen.",
+            errorEmail: "Oops! Deine Email-Adresse wird benötigt.",
+            errorMessage: "Was möchtest du entwickeln?",
+            submit: "Los geht's ;)"
         },
 
     }
