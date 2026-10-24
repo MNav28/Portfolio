@@ -63,8 +63,8 @@ function generateHtmlTemplate(selectedProject) {
             <div class="popup-left-container">
                 <h2>${selectedProject.project_nr}</h2>
                 <p class="project-name">${selectedProject.title}</p>
-                <p class="project-about">What is this project about?</p>
-                <p class="project-description">${selectedProject.description}</p>
+                <p class="project-about">${getTranslation("popup.about")}</p>
+                <p class="project-description">${selectedProject.description[currentLanguage]}</p>
                 <div class="tech-icons" id="tech-icons"></div>
                 <div class="popup-button">
                     <a target="_blank" href="${selectedProject.github}">
@@ -102,7 +102,7 @@ function generateHtmlTemplate(selectedProject) {
                 </div>
                 <img src="${selectedProject.image}" alt="project image">
                 <div class="next-project" onclick="nextProject()">
-                    <p>Next project</p>
+                    <p>${getTranslation("popup.nextProject")}</p>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="mask0_3296_3475" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
                         <rect width="32" height="32" fill="#D9D9D9"/>

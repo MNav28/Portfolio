@@ -64,6 +64,10 @@ const translations = {
             position: "Web Developer",
             location: "Munich Germany",
             impressum: "Legal Notice",
+        },
+        popup: {
+            about: "What is this project about?",
+            nextProject: "Next project"
         }
     },
 
@@ -130,6 +134,10 @@ const translations = {
             position: "Web Entwickler",
             location: "München Deutschland",
             impressum: "Impressum",
+        },
+        popup: {
+            about: "Worum geht es in diesem Projekt?",
+            nextProject: "Nächstes Projekt"
         }
     }
 };
