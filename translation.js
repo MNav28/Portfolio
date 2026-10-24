@@ -146,6 +146,7 @@ function changeLanguage(language) {
     currentLanguage = language;
 
     translatePage();
+    renderFeedbacks();
 }
 
 function translatePage() {
