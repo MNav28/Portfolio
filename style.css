@@ -1363,6 +1363,25 @@ body.popup-open {
     color: #3dcfb6;
 }
 
+.impressum-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+.impressum-main {
+    flex: 1;
+    padding-top: 120px;
+}
+
+.impressum-wrapper .footer-container {
+    margin-top: 0;
+}
+
 .d-none {
     display: none;
 }
