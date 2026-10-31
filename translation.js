@@ -1,4 +1,4 @@
-let currentLanguage = "en";
+let currentLanguage = localStorage.getItem("language") || "en";
 
 const translations = {
     en: {
@@ -144,7 +144,7 @@ const translations = {
 
 function changeLanguage(language) {
     currentLanguage = language;
-
+    localStorage.setItem("language", language);
     translatePage();
     renderFeedbacks();
 }
@@ -175,6 +175,10 @@ function getTranslation(key) {
 
     return translation;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    translatePage();
+});
 
 
 
