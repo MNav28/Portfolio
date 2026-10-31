@@ -88,6 +88,9 @@ function nextProject() {
 
 function renderFeedbacks() {
     const feedbackContent = document.getElementById('feedback-cards');
+    if (!feedbackContent) {
+        return;
+    }
     feedbackContent.innerHTML = '';
 
     for (let i = 0; i < feedbackCards.length; i++) {
