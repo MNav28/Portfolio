@@ -118,6 +118,8 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .logo p {
@@ -1373,9 +1375,38 @@ body.popup-open {
     padding: 0 64px;
 }
 
+.imprint-headline {
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 149px;
+    padding-bottom: 64px;
+    color: rgba(61, 207, 182, 1);
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
 .impressum-main {
     flex: 1;
-    padding-top: 120px;
+    color: #3dcfb6;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    gap: 24px;
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
+}
+
+.impressum-main h2 {
+    color: white;
+    font-size: 19px;
+    font-family: Karla, Arial, Helvetica, sans-serif;
+}
+
+.impressum-main p {
+    font-size: 16px;
+    font-family: Karla, Arial, Helvetica, sans-serif;
 }
 
 .impressum-wrapper .footer-container {
