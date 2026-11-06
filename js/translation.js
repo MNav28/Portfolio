@@ -176,10 +176,6 @@ function getTranslation(key) {
     return translation;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    translatePage();
-});
-
 
 
 

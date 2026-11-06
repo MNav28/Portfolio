@@ -1,15 +1,39 @@
-const projectNames = document.querySelectorAll('.single-project-name');
+//const projectNames = document.querySelectorAll('.single-project-name');
 let currentProjectIndex = 0;
 let currentFeedbackIndex = 0;
 
 function init() {
+    renderLayout();
+    translatePage()
+    projectHover()
     renderFeedbacks();
 }
 
-projectNames.forEach(project => {
-    project.addEventListener('mouseenter', showProjectImage);
-    project.addEventListener('mouseleave', hideProjectImage);
-});
+function renderLayout() {
+    const headerContainer = document.getElementById('header-container');
+    const footerContainer = document.getElementById('footer-container');
+
+    if (headerContainer) {
+        headerContainer.innerHTML = renderHeader();
+    }
+    if (footerContainer) {
+        footerContainer.innerHTML = renderFooter();
+    }
+}
+
+// projectNames.forEach(project => {
+//     project.addEventListener('mouseenter', showProjectImage);
+//     project.addEventListener('mouseleave', hideProjectImage);
+// });
+
+function projectHover() {
+    const projectNames = document.querySelectorAll('.single-project-name');
+
+    projectNames.forEach(project => {
+        project.addEventListener('mouseenter', showProjectImage);
+        project.addEventListener('mouseleave', hideProjectImage);
+    });
+}
 
 function showProjectImage(event) {
     const projectName = event.currentTarget.dataset.project;
