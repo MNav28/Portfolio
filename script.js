@@ -4,8 +4,9 @@ let currentFeedbackIndex = 0;
 
 function init() {
     renderLayout();
-    translatePage()
-    projectHover()
+    translatePage();
+    setNavigationLinks();
+    projectHover();
     renderFeedbacks();
 }
 
@@ -32,6 +33,19 @@ function projectHover() {
     projectNames.forEach(project => {
         project.addEventListener('mouseenter', showProjectImage);
         project.addEventListener('mouseleave', hideProjectImage);
+    });
+}
+
+function setNavigationLinks() {
+    const isHomePage = window.location.pathname.endsWith("/") ||
+        window.location.pathname.endsWith("index.html");
+
+    document.querySelectorAll("[data-section]").forEach((link) => {
+        if (isHomePage) {
+            link.href = `#${link.dataset.section}`;
+        } else {
+            link.href = `./index.html#${link.dataset.section}`;
+        }
     });
 }
 
