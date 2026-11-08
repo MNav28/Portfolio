@@ -1365,7 +1365,8 @@ body.popup-open {
     color: #3dcfb6;
 }
 
-.impressum-wrapper {
+.impressum-wrapper,
+.privacy-policy-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -1411,6 +1412,25 @@ body.popup-open {
 
 .impressum-wrapper .footer-container {
     margin-top: 0;
+}
+
+section h4 {
+    font-family: Karla, Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+section a {
+    color: rgba(61, 207, 182, 1);
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .d-none {
