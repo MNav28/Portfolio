@@ -83,10 +83,10 @@ function renderHeader() {
             <div class="desktop-header">
                 <div class="header-left-container">
                     <div class="switch-language">
-                        <div class="enabled" onclick="changeLanguage('en')">
+                        <div class="lang-btn-left active-language" onclick="changeLanguage('en')">
                             <p>EN</p>
                         </div>
-                        <div class="disabled" onclick="changeLanguage('de')">
+                        <div class="lang-btn-right inactive-language" onclick="changeLanguage('de')">
                             <p>DE</p>
                         </div>
                     </div>

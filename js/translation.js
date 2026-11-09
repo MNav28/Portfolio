@@ -53,7 +53,7 @@ const translations = {
             formNamePlaceholder: "Enter your name",
             formMessagePlaceholder: "Hello Michael, I am interested in ...",
             privacyStart: "I've read the",
-            privacyLink:"privacy policy",
+            privacyLink: "privacy policy",
             privacyEnd: "and agree to the processing of my data as outlined",
             errorName: "Oops! it seems like your name is missing.",
             errorEmail: "Oops! Your email address is required.",
@@ -123,7 +123,7 @@ const translations = {
             formNamePlaceholder: "Gib deinen Namen ein",
             formMessagePlaceholder: "Hallo Michael, ich interessiere mich für ...",
             privacyStart: "Ich habe die",
-            privacyLink:"Datenschutzerklärung",
+            privacyLink: "Datenschutzerklärung",
             privacyEnd: "gelesen und stimme der Verarbeitung meiner Daten gemäß dieser zu",
             errorName: "Oops! Es scheint, als würde dein Name fehlen.",
             errorEmail: "Oops! Deine Email-Adresse wird benötigt.",
@@ -145,8 +145,28 @@ const translations = {
 function changeLanguage(language) {
     currentLanguage = language;
     localStorage.setItem("language", language);
+    updateLanguageButtons(language);
     translatePage();
     renderFeedbacks();
+}
+
+function updateLanguageButtons(language) {
+    const englishButton = document.querySelector(".lang-btn-left");
+    const germanButton = document.querySelector(".lang-btn-right");
+
+    if (language === "en") {
+        englishButton.classList.add("active-language");
+        englishButton.classList.remove("inactive-language");
+
+        germanButton.classList.add("inactive-language");
+        germanButton.classList.remove("active-language");
+    } else {
+        germanButton.classList.add("active-language");
+        germanButton.classList.remove("inactive-language");
+
+        englishButton.classList.add("inactive-language");
+        englishButton.classList.remove("active-language");
+    }
 }
 
 function translatePage() {

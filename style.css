@@ -50,18 +50,22 @@ header {
     justify-content: unset;
     align-items: center;
     gap: 0px;
-    width: 100px;
-    height: 32px;
+    width: 84px;
+    height: 28px;
     border: 1px solid #3dcfb6;
     border-radius: 16px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
 }
 
 .switch-language p {
     font-size: 16px;
     font-family: 'Fira Code', monospace;
+}
+
+.switch-language:hover {
+    border-color: white;
 }
 
 .nav-item {
@@ -86,25 +90,29 @@ header {
     opacity: 1;
 }
 
-.enabled {
+.lang-btn-left,
+.lang-btn-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0px;
-    position: relative;
-    background-color: #3dcfb6;
     width: 50%;
     height: 100%;
+    cursor: pointer;
+}
+
+.active-language {
+    background-color: #3dcfb6;
+    color: #fff;
     border-radius: .8rem;
 }
 
-.disabled {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    width: 50%;
-    height: 100%;
+.inactive-language {
+    background-color: transparent;
+    color: rgba(61, 207, 182, 0.5);
+}
+
+.inactive-language:hover {
+    color: rgba(61, 207, 182, 1);
 }
 
 .header-left-container a {
