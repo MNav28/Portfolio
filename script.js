@@ -4,6 +4,7 @@ let currentFeedbackIndex = 0;
 
 function init() {
     renderLayout();
+    updateLanguageButtons(currentLanguage);
     translatePage();
     setNavigationLinks();
     projectHover();
